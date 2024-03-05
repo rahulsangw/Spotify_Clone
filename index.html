@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!--Fonts-->
+
+
+
+    <title>Spotify - Man Kiya Sun Liya</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="./resources/Spotify-2015.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Best Of Me - Relievers</h1>
+
+        <div class="songList">
+                <div class="songItem">
+                    <img src="./resources/covers/beach.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./resources/covers/coding_1.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./resources/covers/Gta_evening.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./resources/covers/mountains.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./resources/covers/wallpaper.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="4" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="./resources/covers/iceland.jpg" alt="1">
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="5" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div>
+
+                <!-- <div class="songItem">
+                    <img src="./resources/Spotify-2015.png" alt="1">
+                    <span class="songName">Let Me Love You</span>
+                    <span class="songListPlay"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-1x fa-play-circle"></i></span></span>
+                </div> -->
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom"> 
+        <input type="range" class="range" id="myProgressBar" min="0" value ="0" max="100">
+
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        
+         <div class="songInfo">
+            <img src="./resources/music_gif.gif" width="60px" alt="GIF" id="gif"><span id="masterSongName"></span>
+        </div>
+    </div>
+
+  
+    <script src="https://kit.fontawesome.com/10e5909b64.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

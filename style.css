@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Work+Sans:ital,wght@0,500;1,500&display=swap');
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+nav ul{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    height: 45px;
+    width: 45px;
+    padding: 0 8px;
+}
+
+.bottom{
+    position: sticky;
+    height:130px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.bottom .icons .fa-2x{
+    margin-top: .5rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    background: url(./resources/pexels-daniel-reche-3721941.jpg);
+    background-size: cover;
+    background: cover;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 40%;
+    color: black;
+    margin:12px 0;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 24px;
+}
+
+.timestamp i{
+    cursor:  pointer;
+}
+
+.songList{
+    margin: 2rem;
+}
+
+.songItem img{
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+}
+
+.songInfo{
+    margin-top: 0rem;
+    position: absolute;
+    left:10vw;
+    display: flex;
+    
+}
+
+.songInfo img{
+    margin-top: -.5rem;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.songInfo span{
+   display: flex;
+   align-items: flex;
+   font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img{
+    margin-right: 1rem;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor:pointer;
+}
+
+
+
+
+.songInfo {
+    margin-top: 2rem;
+    position: relative;
+    left: 10vw;
+    display: flex;
+    justify-content: center;
+}
+
+.songInfo img {
+    margin-right: 1rem;
+    height: 30px; /* Adjust the height to your preference */
+    width: 30px; /* Adjust the width to your preference */
+    border-radius: 50%; /* To make the image round */
+}
+
+.songInfo span {
+    display: flex;
+    align-items: center;
+    font-family: "Varela Round", sans-serif;
+    font-size: 1rem; /* Adjust the font size to your preference */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .songItem {
+        width: 70%;
+    }
+
+    .songInfo {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .songItem {
+        width: 90%;
+    }
+
+    .songInfo {
+        left: 0;
+    }
+}
