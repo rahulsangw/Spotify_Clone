@@ -100,7 +100,7 @@ for(let i=0;i<playButtons.length;i++){
             //handling the gif
             document.querySelector(".songInfo img").style.opacity=1;
 
-        }else if ((audioElement.played || audioElement.currentTime>0) && (e.target.getAttribute("id")==current_song_id)){
+        }else if ((audioElement.played || audioElement.currentTime>0) && (parseInt(e.target.getAttribute("id"))==current_song_id)){
 
             console.log("inside else if");
             console.log(parseInt(e.target.getAttribute("id")));
